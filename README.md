@@ -13,13 +13,13 @@ npm install -g yo
 通过npm直接安装脚手架
 
 ```javascript
-npm install -g webpack-react-kit
+npm install -g generator-reactpackage-kit
 ```
 
 新建项目文件夹，在文件夹下运行：
 
 ```javascript
-yo webpack-react-kit
+yo reactpackage-kit
 ```
 
 不出意外的话，会生成如下目录，Bazinga!!!
@@ -27,6 +27,8 @@ yo webpack-react-kit
 * app
 
   +components        组件库，存放公用组件和模块
+
+  +images                无，需要自己添加
 
   +templates            html模板，如果无特殊需求，只需要默认模板即可
 
