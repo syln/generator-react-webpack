@@ -1,3 +1,5 @@
+//author:'qi'
+
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -19,15 +21,17 @@ var config = {
   entry: entries,
   output:{
     path: build_path,
-    filename:"./js/[name].js"
+    filename:"./js/[name].js",
+    publicPath:""
   },
   module:{
-    loaders:[ //加载loader
+    loaders:[ //loader
       {test:/\.json$/,loader:"json"},
-      {test: /\.scss$/,loader: 'style!css!sass' },
-      {test : /\.(less|css)$/,loader: ExtractTextPlugin.extract('style', 'css!less')},
+      {test: /\.scss$/,loader: 'style-loader!css-loader!sass-loader' },
+      {test : /\.less$/,loader: ExtractTextPlugin.extract('style', 'css!less')},
       {test:/\.js[x]?$/,exclude:/node_modules/,loader:'babel-loader',query:{presets:['react','es2015']}},
-      {test:/\.css$/,loader:extractCSS.extract('style','css')}
+      {test:/\.css$/,loader:extractCSS.extract('css-loader')},
+      {test:/\.(png|jpg|gif|woff|ttf)$/,loader:'url-loader?limit=10000&name=/images/[name][hash].[ext]'}
     ]
   },
   resolve: {

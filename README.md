@@ -36,7 +36,7 @@ yo reactpackage-kit
 
   +view	              视图页面
 
-  ​    +home               文件夹可自由命名，默认仅供参考
+  ​    +index               文件夹可自由命名，默认仅供参考
 
   ​	-index.jsx       页面逻辑用jsx编写
 
