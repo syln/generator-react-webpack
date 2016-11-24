@@ -1,10 +1,10 @@
-##脚手架使用说明
+##脚手架使用说明( Intro )
 
-###安装步骤
+###安装步骤( Installation steps )
 
-推荐使用yeoman安装
+使用yeoman安装(Using Yeman to install)
 
-首先安装yeoman
+首先安装yeoman()
 
 ```javascript
 npm install -g yo
@@ -16,19 +16,19 @@ npm install -g yo
 npm install -g generator-reactpackage-kit
 ```
 
-新建项目文件夹，在文件夹下运行：
+新建项目文件夹，在文件夹下运行：（mkdir dirname cd dirname）
 
 ```javascript
 yo reactpackage-kit
 ```
 
-不出意外的话，会生成如下目录，Bazinga!!!
+不出意外的话，会生成如下目录，Bazinga!!! (project category)
 
 * app
 
   +components        组件库，存放公用组件和模块
 
-  +images                无，需要自己添加
+  +images                需要自己添加
 
   +templates            html模板，如果无特殊需求，只需要默认模板即可
 
@@ -76,5 +76,5 @@ npm install
 
 ```
 npm start  //启动服务，改变代码，实时刷新哟
-npm run build   //开发完成之后的打包，就是这么简单得斯内
+npm run build   //开发完成之后的打包，就是这么简单dei si
 ```
